@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sortiments",
+  "info": {
+    "name": "Sortiment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Bezeichnung": {
+      "type": "string"
+    },
+    "Artikelnr": {
+      "type": "biginteger"
+    },
+    "Gruppe": {
+      "type": "string"
+    }
+  }
+}

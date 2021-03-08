@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lieferungens",
+  "info": {
+    "name": "Lieferungen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tag": {
+      "type": "date",
+      "required": true
+    },
+    "kunden": {
+      "model": "kunden"
+    },
+    "betrag": {
+      "type": "decimal"
+    },
+    "users_permissions_user": {
+      "columnName": "x2",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "bezirk": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kundens",
+  "info": {
+    "name": "kunden",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "schluessel": {
+      "type": "string"
+    },
+    "vorname": {
+      "type": "string"
+    },
+    "strasse": {
+      "type": "string"
+    },
+    "hausnummer": {
+      "type": "string"
+    },
+    "plz": {
+      "type": "string"
+    },
+    "ort": {
+      "type": "string"
+    },
+    "teilort": {
+      "type": "string"
+    },
+    "telefon": {
+      "type": "string"
+    },
+    "bezirk": {
+      "type": "integer"
+    },
+    "tour": {
+      "type": "integer"
+    },
+    "bemerkung": {
+      "type": "richtext"
+    },
+    "sortiments": {
+      "collection": "sortiment"
+    },
+    "sort": {
+      "type": "integer"
+    }
+  }
+}

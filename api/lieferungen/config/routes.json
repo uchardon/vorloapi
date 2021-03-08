@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lieferungens",
+      "handler": "lieferungen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lieferungens/count",
+      "handler": "lieferungen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lieferungens/:id",
+      "handler": "lieferungen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lieferungens",
+      "handler": "lieferungen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lieferungens/:id",
+      "handler": "lieferungen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lieferungens/:id",
+      "handler": "lieferungen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

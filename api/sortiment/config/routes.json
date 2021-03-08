@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sortiments",
+      "handler": "sortiment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sortiments/count",
+      "handler": "sortiment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sortiments/:id",
+      "handler": "sortiment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sortiments",
+      "handler": "sortiment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sortiments/:id",
+      "handler": "sortiment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sortiments/:id",
+      "handler": "sortiment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
